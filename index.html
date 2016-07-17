@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Animaciones</title>
+    <link href="global.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div id="cielo">
+<div id="bern"></div>
+<div id="start" onclick="mensaje()">START</div>
+<div id="pajaro"> </div>
+</div>
+<div id="cartel"><div id="contenido">
+  El juego aun esta en desarrollo. <br><br><br>
+  <button class="button" onclick="exit()"><span>Exit </span></button>
+</div>
+</div>
+
+<script>
+function mensaje() {
+  document.getElementById("cartel").style.visibility = 'visible';
+}
+
+function exit() {
+  document.getElementById("cartel").style.visibility = 'hidden';
+}
+
+</script>
+  <ul>
+  <li id="titulo"> WALKING ALONE </li>
+  <li> </li>
+  <li><div href="#" class="round green" onclick="mensaje()">Login</div></li>
+  <li><div href="#" class="round red" onclick="mensaje()">Sign Up</div></li>
+	<li><div href="#" class="round yellow" onclick="mensaje()">Demo</div></li>
+</ul>
+
+
+</body>
+</html>
